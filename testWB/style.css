@@ -1,0 +1,126 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+* {
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../joel-abraham-8RRYJg26Wr4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: Lato;
+    font-family: "Nerko One", cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: purple 2px 2px;
+    margin: 70px 70px !important;
+}
+
+.dices {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 20px;
+
+    border: 1px solid white;
+    border-radius: 20px;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../joel-abraham-8RRYJg26Wr4-unsplash.jpg'); */
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+
+    /* border: red 1px solid; */
+}
+
+.dice {
+    display: grid;
+    /* border: 1px solid red; */
+    width: 30%;
+    margin-bottom: 30px;
+
+    place-items: center;
+}
+
+.diceIMG {
+    width: 50%;
+    margin: 20px 0;
+}
+
+.roll-die {
+    background: none;
+    border: none;
+    background-color: #b300ff60;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    outline: none;
+    cursor: pointer;
+}
+
+.result {
+    background: none;
+    border: none;
+    outline: none;
+    outline: none;
+    border-bottom: 2px solid #b200ff;
+    padding: 7px;
+    font-size: 15px;
+    width: 30%;
+
+    text-align: center;
+}
+
+.rollAnm {
+    animation-name: roll;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes roll {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* MEDIA */
+
+/*PHONES*/
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 6000px) and (-webkit-min-device-pixel-ratio: 2) {
+    .dices {
+        justify-content: center;
+    }
+    .dice {
+        width: 80%;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .dices {
+        justify-content: space-between;
+    }
+    .dice {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+    .dices {
+        justify-content: space-between;
+    }
+    .dice {
+        width: 30%;
+    }
+}
