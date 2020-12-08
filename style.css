@@ -7,7 +7,7 @@
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../joel-abraham-8RRYJg26Wr4-unsplash.jpg");
+        url("./joel-abraham-8RRYJg26Wr4-unsplash.jpg");
     background-size: cover;
     background-position: center;
 }
